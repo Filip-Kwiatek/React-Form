@@ -5,12 +5,8 @@ const TypingForm = (props) => {
   const [enteredData, setEnteredData] = useState("");
   const submitHandler = (event) => {
     event.preventDefault();
-    setEnteredData(event.target.value);
-
-    const submitedData = {
-      data: enteredData,
-    };
-    props.onSaveDataHandler(submitedData);
+    props.onSaveDataHandler(enteredData);
+    setEnteredData("");
   };
   return (
     <div>
@@ -20,7 +16,7 @@ const TypingForm = (props) => {
             type="text"
             placeholder="My day was..."
             value={enteredData || ""}
-            onChange={submitHandler}
+            onChange={event => setEnteredData(event.target.value)}
           />
           <button type="submit">Go On!</button>
         </div>
