@@ -1,0 +1,8 @@
+.comment__bar {
+  margin-top: 2%;
+  display: inline-block;
+  width: 14%;
+  border: 2px solid white;
+  margin-left: 1%;
+  color: #ffebcd;
+}

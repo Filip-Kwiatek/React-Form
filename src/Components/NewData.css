@@ -1,0 +1,9 @@
+.box-form {
+  display: flex;
+  align-items: baseline;
+}
+
+.box-form--data {
+  margin: 4%;
+  width: 7%;
+}
