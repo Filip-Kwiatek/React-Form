@@ -15,7 +15,7 @@ const TypingForm = (props) => {
           <input
             type="text"
             placeholder="My day was..."
-            value={enteredData || ""}
+            value={enteredData}
             onChange={event => setEnteredData(event.target.value)}
           />
           <button type="submit">Go On!</button>
